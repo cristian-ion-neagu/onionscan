@@ -1,8 +1,8 @@
 package deanonymization
 
 import (
-	"github.com/s-rah/onionscan/config"
-	"github.com/s-rah/onionscan/report"
+	"github.com/cristian-ion-neagu/onionscan/config"
+	"github.com/cristian-ion-neagu/onionscan/report"
 	"regexp"
 	"strings"
 )

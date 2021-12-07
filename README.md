@@ -40,7 +40,7 @@ provided by the core go standard library:
 * github.com/rwcarlsen/goexif - For EXIF data extraction.
 * github.com/HouzuoGuo/tiedot/db - For crawl database.
 
-See <a href="https://github.com/s-rah/onionscan/wiki">the wiki</a> for guidance.
+See <a href="https://github.com/cristian-ion-neagu/onionscan/wiki">the wiki</a> for guidance.
 
 ### Grab with go get
 
@@ -70,7 +70,7 @@ application:
 `onionscan --jsonReport notarealhiddenservice.onion`
 
 If you would like to use a proxy server listening on something other that 
-`127.0.0.1:9050`, then you can use the --torProxyAddress flag:
+`127.0.0.1:9150`, then you can use the --torProxyAddress flag:
 
 `onionscan --torProxyAddress=127.0.0.1:9150 notarealhiddenservice.onion`
 

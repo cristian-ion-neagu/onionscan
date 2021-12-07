@@ -3,13 +3,13 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/s-rah/onionscan/config"
-	"github.com/s-rah/onionscan/deanonymization"
-	"github.com/s-rah/onionscan/onionscan"
-	"github.com/s-rah/onionscan/onionscan/steps"
-	"github.com/s-rah/onionscan/report"
-	"github.com/s-rah/onionscan/utils"
-	"github.com/s-rah/onionscan/webui"
+	"github.com/cristian-ion-neagu/onionscan/config"
+	"github.com/cristian-ion-neagu/onionscan/deanonymization"
+	"github.com/cristian-ion-neagu/onionscan/onionscan"
+	"github.com/cristian-ion-neagu/onionscan/onionscan/steps"
+	"github.com/cristian-ion-neagu/onionscan/report"
+	"github.com/cristian-ion-neagu/onionscan/utils"
+	"github.com/cristian-ion-neagu/onionscan/webui"
 	"golang.org/x/crypto/ssh/terminal"
 	"io/ioutil"
 	"log"
@@ -25,7 +25,7 @@ func main() {
 		flag.PrintDefaults()
 	}
 
-	torProxyAddress := flag.String("torProxyAddress", "127.0.0.1:9050", "the address of the tor proxy to use")
+	torProxyAddress := flag.String("torProxyAddress", "127.0.0.1:9150", "the address of the tor proxy to use")
 	simpleReport := flag.Bool("simpleReport", true, "print out a simple report detailing what is wrong and how to fix it, true by default")
 	jsonSimpleReport := flag.Bool("jsonSimpleReport", false, "print out a simple report as json, false by default")
 	reportFile := flag.String("reportFile", "", "the file destination path for report file - if given, the prefix of the file will be the scanned onion service. If not given, the report will be written to stdout")
